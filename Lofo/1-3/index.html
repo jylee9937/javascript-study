@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--  일반적으로 script를 추가하면 js를 패치하고, 실행하는 동안 html 파싱이 blocked.  -->
+    <!--  head 안에 asyn을 넣어서 하면 js를 패치하는 동안에는 파싱이 이어지고, 실행할 때만 멈춘다. 그리고 다시 파싱하게 된다.  비동기적으로 패치되는대로 실행-->
+    <!--  defer은 js를 패치하는 것을 html 파싱을 하고, 파싱이 완료되면 js를 실행한다.  패치하고, 순서대로 실행함-->
+    <script src="operator.js"/>
+<!--    async vs defer -->
+</head>
+<body>
+
+</body>
+</html>
